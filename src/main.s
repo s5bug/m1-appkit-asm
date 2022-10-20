@@ -1,5 +1,3 @@
-.align 4
-
 ; libSystem.exit
 ;     (status : int / i32 {x0})
 ;     -> nothing
