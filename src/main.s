@@ -20,7 +20,7 @@
 .align 4
 run:
     ; begin
-    sub sp, sp, #-16
+    sub sp, sp, #16
     stp x19, lr, [sp]
 
     ; x19 = clazz_NSApplication
@@ -41,6 +41,7 @@ run:
 
     ; end
     ldp x19, lr, [sp]
+    add sp, sp, #16
     ret
 
 .global _main
